@@ -1,24 +1,34 @@
 import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
+import { Container,Row, Col } from 'react-bootstrap';
+
+const Alert = styled.span`
+  display: "block";
+  background: tomato;
+  width: 100%
+`;
+
+// Estilo a etiqueta
+const Title = styled.h1`
+  color: red;
+  height: 90px;
+`;
+// Estilo a Componente
+const AppRow = styled(Row)`
+  justify-content: center;
+  background: blue;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <AppRow>
+        <Col>
+          <Title> Pruebita</Title>
+        </Col>
+      </AppRow>
+
+    </Container>
   );
 }
 

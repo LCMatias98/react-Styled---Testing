@@ -1,0 +1,7 @@
+npm i nvm -g
+npm create-react-app -g
+
+create-react-app nombreProyecto
+npm install react-bootstrap
+npm install styled-components
+npm install uuid
