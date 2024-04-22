@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import styled from 'styled-components';
-import { Container,Row, Col } from 'react-bootstrap';
+import { Container,Row, Col } from './Components/layout/Base';
 
 const Alert = styled.span`
   display: "block";
